@@ -56,33 +56,33 @@ person = []
 # 5. now we have to make a program that looks for traits in the suspect's DNA
 
 for i in gender:
-    if gender(i) in dna:
+    if gender[i] in dna:
         print(i)
         person.append(i)
 
 for i in race:
-    if race(i) in dna:
+    if race[i] in dna:
         print(i)
         person.append(i)
 
 for i in hair:
-    if hair(i) in dna:
+    if hair[i] in dna:
         print(i)
         person.append(i)
 
 for i in eyes:
-    if eyes(i) in dna:
+    if eyes[i] in dna:
         print(i)
         person.append(i)
 
 for i in face:
-    if face(i) in dna:
+    if face[i] in dna:
         print(i)
         person.append(i)
 
 # 6. This will give us the suspect's description. Now to compare who matches:
 
 for p in people:
-    if people(p) == person:
-        print("The person we're looking for is {0}".format(p.upper()))
+    if suspects[s] == person:
+        print("The person we're looking for is {0}".format(s.upper()))
         break
